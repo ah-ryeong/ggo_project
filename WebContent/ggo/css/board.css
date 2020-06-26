@@ -1,0 +1,499 @@
+@charset "utf-8";
+
+
+/* ----------------------------------------------------------------------------- */
+/* 게시판 */
+/* ----------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* 게시판 첨부파일박스*/
+/* ----------------------------------------------------------------------------- */
+.progress { position:relative; width:99%; border: 1px solid #ddd; padding: 1px; border-radius: 3px; margin:18px 0 0 4px; }
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+.filebox_wrap {
+	cursor: pointer;
+	width: 99%;
+	border: 1px solid #ccc;
+	padding: 20px 0;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.filebox_wrap input[type="file"] {  /* 파일 필드 숨기기 */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+
+.filebox_wrap .comment {
+	margin-top: 12px;
+	font-style: italic;
+}
+
+.filebox_wrap .drop_message {
+	font-size: 25px;
+	font-weight: bold;
+	color: #484848;
+	padding: 20px 0;
+}
+.file_item {
+	text-align: left;
+	margin: 15px 0 5px 10px;
+	width: 120px;
+	overflow: hidden;
+	float:left;
+	text-align:center;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 4px;
+    position:relative;
+}
+
+.file_item .file_item_thumb {
+	width: 100%;
+	height: 120px;
+}
+
+.file_item_thumb .down {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 130px;
+	background: #f6f6f6;
+	color: #f1f1f1;
+	padding-top: 30px;
+	opacity: 0.3;
+}
+
+.file_item_thumb .down > a {
+	font-size: 50px;
+	margin: 0 auto;
+}
+
+
+.file_item .file_item_btn {
+	margin-top: 5px;
+}
+
+
+label.file_btn {
+    width:auto !important;
+    display:inline-block !important;
+}
+
+
+/* ----------------------------- */
+/* QNA
+/* ----------------------------- */
+.board {
+	border-top: 2px solid #000;
+}
+.board li {
+	padding: 30px 20px;
+	border-bottom: 1px solid #cecece;
+}
+.board_qna li .b_con {
+	position: relative;
+	width: 82%;
+	display: block;
+	float: left;
+	padding-left: 57px;
+}
+.board_qna li .b_con > a {
+	display: block;
+}
+.board_qna li .b_con span.b_no {
+	position: absolute;
+	top: -7px;
+	left: 0;
+	font-size: 3.0rem;
+}
+.board_qna li .b_con strong {
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.board_qna li .b_date {
+	display: block;
+	float: left;
+	width: 18%;
+	padding-top: 5px;
+	text-align: right;
+	color: #707070;
+	font-family: "RobotoLight";
+}
+/* 비밀글 */
+.board_qna li .b_con a strong i {
+	display: inline-block;
+	width: 14px;
+	margin-left: 10px;
+	text-indent: -5000000px;
+	background: url("/images/sub/secret.svg") no-repeat center;
+	background-size: 14px;
+}
+
+/* 대답대기/완료상태 */
+.board_qna li .b_con a strong span {
+	display: inline-block;
+	padding-right: 9px;
+}
+.board_qna li .b_con a strong span.completed {
+	color: #c4191f;
+}
+.board_qna li .b_con a strong span.waiting {
+	color: #9f9f9f;
+}
+
+/* Q_style */
+.board_qna li .qa_style  {
+	position: relative;
+	padding-left: 60px;
+}
+.board_qna li .qa_style a span.b_q,
+.board_qna li .qa_style a span.b_a {
+	display: inline-block;
+	position: absolute;
+	top: -7px;
+	left: 0;
+	width: 38px;
+	line-height: 38px;
+	border-radius: 50%;
+	font-size: 2.0rem;
+	text-align: center;
+}
+.board_qna li .qa_style a span.b_q {
+	background: #000;
+	color: #fff;
+}
+.board_qna li .qa_style a span.b_a {
+	top: 20px;
+	background: #c4191f;
+	color: #fff;
+}
+/* .board_qna li .b_con,
+.board_qna li .b_date {
+	display: block;
+	float: left;
+}
+.board_qna li .b_con {
+	width: 82%;
+}
+.board_qna li .b_con a {
+	display: block;
+}
+.board_qna li .b_con a > span {
+	display: inline-block;
+	width: 38px;
+	line-height: 38px;
+	margin-right: 24px;
+	background: #000;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 2.0rem;
+	text-align: center;
+}
+.board_qna li .b_con a strong span {
+	display: inline-block;
+	padding-right: 9px;
+}
+
+.board_qna li .b_con a strong i {
+	display: inline-block;
+	width: 14px;
+	margin-left: 14px;
+	text-indent: -5000000px;
+	background: url("/images/sub/secret.svg") no-repeat center;
+	background-size: 14px;
+}
+.board_qna li .b_date {
+	width: 18%;
+	padding-top: 10px;
+	text-align: right;
+	color: #707070;
+	font-family: "RobotoLight";
+} */
+.btn_board button,
+.btn_board a {
+	display: inline-block;
+	padding:  0 45px;
+	line-height: 44px;
+	border: 1px solid #000;
+	vertical-align: top;
+}
+.btn_right {
+	margin-top: 20px;
+	float: right;
+}
+.btn_board button.confirm,
+.btn_board a.confirm {
+	background: #eaeaea;
+}
+
+
+
+/* ----------------------------- */
+/* FAQ
+/* ----------------------------- */
+.faq {
+	cursor: pointer;
+}
+.faq .qa_style {
+	width: 100%;
+}
+.a_style {
+	margin-top: 30px;
+	border-top: 1px solid #cecece;
+	padding-top: 20px;
+}
+.b_comment {
+	clear: both;
+	width: 100%;
+	background: #f8f8f8;
+}
+/* .faq {
+	cursor: pointer;
+}
+.faq .b_q {
+	width: 100%;
+}
+
+.qa_style a {
+	position: relative;
+	width: 100%;
+	display: block;
+	padding-left: 50px;
+}
+.b_q strong {
+	font-size: 1.8rem;
+	font-family: "NotoSansRegular";
+}
+.qa_style a > span {
+	position: absolute;
+	top: -4px;
+	left: 0;
+	display: block;
+	width: 38px;
+	line-height: 38px;
+	background: #000;
+	color: #fff;
+	border-radius: 50%;
+	font-size: 2.0rem;
+	text-align: center;
+}
+.a_style a {
+	margin-top: 30px;
+	border-top: 1px solid #cecece;
+	padding-top: 20px;
+}
+.a_style a > span  {
+	top: 20px;
+	background: #c4191f;
+} */
+
+
+/* ----------------------------- */
+/* view
+/* ----------------------------- */
+.board_title {
+	padding: 30px;
+	border-bottom: 1px solid #cecece;
+	background: #f9f9f9;
+}
+.board_view .title_view  {
+	font-size: 2.8rem;
+	font-family: "RobotoRegular", "NotoSansMedium";
+}
+.board_view .board_file {
+	padding: 10px 30px;
+	border-bottom: 1px solid #cecece;
+	background: #f9f9f9;
+}
+.board_view .board_file p {
+	padding: 3px 0 2px;
+}
+.board_view .board_file a {
+	padding-left: 23px;
+}
+.board_view .board_file a:hover {
+	text-decoration: underline;
+}
+.board_view .board_file .b_pdf {
+	background: url("/images/product/pdf.svg") no-repeat center left;
+	background-size: 16px 17px;
+}
+.board_view .board_file .b_file {
+	background: url("/images/sub/document_g.svg") no-repeat center left;
+	background-size: 16px 17px;
+}
+.board_view .board_content {
+	padding: 30px;
+	border-bottom: 1px solid #cecece;
+}
+
+/* Q&A */
+.board_view .view_reply {
+	padding: 30px;
+	border-bottom: 1px solid #cecece;
+	background: #eaeaea;
+}
+.board_view .view_reply .r_ti {
+	margin-bottom: 10px;
+	font-size: 1.8rem;
+	color: #c4191f;
+	font-family: "NotoSansMedium";
+}
+.board_view .view_reply textarea {
+	width: 100%;
+	min-height: 100px;
+	resize: vertical;
+}
+.board_view .view_reply button {
+	display: inline-block;
+	padding:  0 25px;
+	margin-top: 20px;
+	line-height: 36px;
+	border: 1px solid #eaeaea;
+	vertical-align: top;
+	background: #fff;
+}
+
+
+/* ----------------------------- */
+/* write
+/* ----------------------------- */
+.board_write {
+	border-bottom: 1px solid #000;
+}
+.board_write_content {
+	padding: 20px 0;
+	border-bottom: 1px solid #cecece;
+}
+.board_write_content label {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+}
+.board_write_content input,
+.board_write_content select,
+.board_write_content textarea,
+.board_form input,
+.board_form select,
+.board_form textarea {
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #cecece;
+}
+
+/* password */
+.board_password h2 {
+	padding-left: 0;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.board_password h2:before {
+	display: none;
+}
+.board_password input {
+	width: 200px;
+}
+
+
+
+/* ----------------------------- */
+/* Responsive
+/* -----------------------------
+/* Layout Max Size : 1280px
+/* Desktop Size	: 1024px < Screen <= 1280px
+/* Tablet Size	: 1024px < Screen <= 768px
+/* Mobile Size	: 767px < Screen
+/* ----------------------------- */
+
+
+@media screen and (max-width:768px) {
+
+	.btn_board button,
+	.btn_board a {
+		padding:  0 25px;
+		line-height: 38px;
+		font-size: 1.5rem;
+	}
+
+	/* ----------------------------- */
+	/* QNA
+	/* ----------------------------- */
+	.board {
+		border-top: 2px solid #000;
+	}
+	.board li {
+		padding: 20px 16px;
+		border-bottom: 1px solid #cecece;
+	}
+	.board_qna li .b_con {
+		width: 100%;
+		float: none;
+		padding-left: 42px;
+	}
+	.board_qna li .b_con span.b_no {
+		top: 5px;
+	}
+	/* Q_style */
+	.board_qna li .qa_style  {
+		padding-left: 42px;
+	}
+	.board_qna li .qa_style a span.b_q,
+	.board_qna li .qa_style a span.b_a {
+		top: -4px;
+		width: 30px;
+		line-height: 30px;
+		font-size: 1.6rem;
+	}
+	.board_qna li .qa_style a span.b_a {
+		top: 20px;
+	}
+	.board_qna li .b_date {
+		float: none;
+		width: 100%;
+		padding-top: 5px;
+		padding-left: 42px;
+		text-align: left;
+	}
+
+	.board_qna li .qa_mobile a span.b_q,
+	.board_qna li .qa_mobile a span.b_a {
+		top: 7px;
+	}
+
+	/* ----------------------------- */
+	/* FAQ
+	/* ----------------------------- */
+	.a_style {
+		margin-top: 20px;
+	}
+
+
+	/* ----------------------------- */
+	/* view
+	/* ----------------------------- */
+	.board_title {
+		padding: 20px;
+	}
+	.board_view .title_view  {
+		font-size: 2.0rem;
+	}
+	.board_view .board_file {
+		padding: 10px 20px;
+	}
+
+}
