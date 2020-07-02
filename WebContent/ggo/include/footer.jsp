@@ -10,9 +10,9 @@
             </div>
             <div class="content">
                 <ul class="f_link">
-                    <li><a href="/content/제휴제안">제휴제안</a></li>
+                    <li><a href="board?cmd=partnership">제휴제안</a></li>
                     <li><a href="https://smartstore.naver.com/ggodeungo" target="_blank">온라인스토어</a></li>
-                    <li><a href="/content/개인정보취급방침">개인정보처리방침</a></li>
+                    <li><a href="">개인정보처리방침</a></li>
                     <li><a href="http://www.designbusan.kr/" target="_blank">디자인부산</a></li>
                 </ul>
                 <div class="f_detail">

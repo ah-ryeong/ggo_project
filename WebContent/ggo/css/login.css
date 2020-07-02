@@ -58,7 +58,7 @@ label{
 #submit {
   border-radius: 2px;
   border: none;
-  color: rgb(206, 171, 150);
+  color: #404040;
   cursor: pointer;
   display: block;
   font-size: 2em;
@@ -69,7 +69,7 @@ label{
 }
 
 #submit:hover {
-  background: rgb(206, 171, 150);
+  background: #ffef34;
   color: white;
 }
 

@@ -38,7 +38,7 @@
     <header>
         <div class="header_con">
             <div class="logo">
-            	<a><img alt="logo" src="ggo/images/common/logo.png" /></a>
+            	<a><img alt="logo" src="ggo/images/common/logo.png" style="width: 100%" /></a>
             </div>
             <nav class="pc">
                 <ul class="clear menu1Dep">

@@ -151,7 +151,7 @@ nav.pc li a {
   text-decoration: none;
 }
 nav.pc li a:hover {
-  color: #fff;
+  color: #404040;
   text-decoration: underline;
 }
 nav.pc .language {
