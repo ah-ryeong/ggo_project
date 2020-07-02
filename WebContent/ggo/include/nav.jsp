@@ -16,11 +16,9 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+JP&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lato&family=Montserrat&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Serif&family=Open+Sans&family=Source+Sans+Pro&display=swap"
-        rel="stylesheet">
+ 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+ 	
 
     <script>
         // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
@@ -45,17 +43,17 @@
             <nav class="pc">
                 <ul class="clear menu1Dep">
                     <li><a href="user?cmd=home">캐릭터</a></li>
-                    <li><a href="/#board">게시판</a></li>
+                    <li><a href="board?cmd=board">게시판</a></li>
                     <li><a href="board?cmd=offline">매장안내</a></li>
                     <li><a href="board?cmd=partnership">제휴제안</a></li>
                     <li><a href="https://smartstore.naver.com/ggodeungo" target="_blank" class="link">온라인스토어</a></li>
                     <c:choose>
                     	<c:when test="${empty sessionScope.principal }">
-	                    	<li><a href="user?cmd=join">로그인</a></li>
+	                    	<li><a href="user?cmd=login">로그인</a></li>
 		                    <li><a href="user?cmd=join">회원가입</a></li>
                     	</c:when>
 	                   	<c:otherwise>
-	                   		<li><a href="user?cmd=update">회원정보</a></li>
+	                   		<li><a href="user?cmd=MyPage">회원정보</a></li>
 		                    <li><a href="user?cmd=logout">로그아웃</a></li>
 	                   	</c:otherwise>
                     </c:choose>
@@ -69,23 +67,25 @@
                     <span></span>
                 </div>
                 <div class="mobile_menu">
+                	<span class="m_language">
+		              <c:choose>
+	                    	<c:when test="${empty sessionScope.principal }">
+		                    	<a href="user?cmd=login">로그인</a>
+			                    <a href="user?cmd=join">회원가입</a>
+	                    	</c:when>
+		                   	<c:otherwise>
+		                   		<a href="user?cmd=MyPage">회원정보</a>
+			                    <a href="user?cmd=logout">로그아웃</a>
+		                   	</c:otherwise>
+                   		</c:choose>
+		            </span>
                     <ul class="clear">
                         <li><a href="user?cmd=home">캐릭터</a></li>
-                        <li><a href="/#board">게시판</a></li>
+                        <li><a href="board?cmd=board">게시판</a></li>
                         <li><a href="board?cmd=offline">매장안내</a></li>
                         <li><a href="board?cmd=partnership">제휴제안</a></li>
                         <li><a href="https
                             //smartstore.naver.com/ggodeungo" target="_blank" class="link">온라인스토어</a></li>
-                        <c:choose>
-	                    	<c:when test="${empty sessionScope.principal }">
-		                    	<li><a href="user?cmd=join">로그인</a></li>
-			                    <li><a href="user?cmd=join">회원가입</a></li>
-	                    	</c:when>
-		                   	<c:otherwise>
-		                   		<li><a href="user?cmd=update">회원정보</a></li>
-			                    <li><a href="user?cmd=logout">로그아웃</a></li>
-		                   	</c:otherwise>
-                   		</c:choose>
                     </ul>
                 </div>
             </nav>

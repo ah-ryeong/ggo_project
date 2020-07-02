@@ -1,0 +1,556 @@
+
+@charset "utf-8";
+
+/* ----------------------------- */
+/* common Style
+/* ----------------------------- */
+
+
+/* ----------------------------- */
+/* Basic
+/* ----------------------------- */
+html {
+    font-size: 62.5%;
+}
+html,body {
+	 /* 줄바꿈속성 */
+    word-break: keep-all;
+    word-wrap: break-word;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'NotoSansRegular', 'malgun gothic', 맑은고딕, 'Dotum', 돋움, 'Arial', 'sans-serif';
+    font-size: 1.6rem;
+    /* 줄 높이 정하는 설정 */
+    /* normal : 웹브라우저에서 정한 기본값. 보통 1.2 */
+    line-height: normal !important;
+    color: #404040;
+}
+
+/*body img { max-width: 100%; }*/
+h1, h2, h3, h4, h5, h6 { font-weight:normal; }
+a { color: #404040;}
+a:hover, a.focus { color: #404040; }
+input {
+    padding: 10px;
+}
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+textarea,
+button,
+select {
+    font-size: 1.6rem;
+    font-family: 'NotoSansRegular', 'malgun gothic', 맑은고딕, 'Dotum', 돋움, 'Arial', 'sans-serif';
+}
+select {
+    background: url('/images/common/arrow_down_b.png') no-repeat center right 30px;
+}
+
+
+/* ----------------------------- */
+/* Layout style
+/* ----------------------------- */
+.wrap {
+  max-width: 1440px;
+  margin:0 auto;
+}
+.wrap_in {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+/* ----------------------------- */
+/* color
+/* ----------------------------- */
+
+/* ----------------------------- */
+/* backtround
+/* ----------------------------- */
+
+/* ----------------------------- */
+/* font
+/* ----------------------------- */
+
+.t_center {
+    text-align: center;
+}
+.t_left {
+    text-align: left;
+}
+.t_right {
+    text-align: right;
+}
+
+
+/* ----------------------------- */
+/* header
+/* ----------------------------- */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* z-index : div요소들을 겹칠 수 있음 , 수직위치를 정함
+  값은 정수 -> 숫자가 클 수록 올라오고 작을 수록 내려감 */
+  z-index: 10000;
+  transition: ease 0.2s;
+}
+header .logo {
+  /*position: absolute;
+  top: 42px;
+  left: 0;*/
+}
+header .logo a {
+  display: block;
+  width: 231px;
+  height: 61px;
+  background: url('../images/common/logo_scroll.svg') no-repeat center;
+  background-size: 231px 100px;
+  text-indent: -50000px;
+}
+.header_con {
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+nav.pc {
+  margin-top: 35px;
+  float: right;
+}
+nav.mobile {
+  display: none;
+}
+nav.pc ul {
+  display: inline-block;
+  list-style: none;
+  align-items: flex-end;
+}
+nav.pc li {
+  float: left;
+  font-size: 1.5rem;
+}
+nav.pc li a {
+  padding: 9px 17px;
+  display: block;
+  color: #404040;
+  text-decoration: none;
+}
+nav.pc li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+nav.pc .language {
+    position: relative;
+    display: inline-block;
+    float: right;
+    font-size: 1.5rem;
+    margin: 8px 0 0 10px;
+}
+nav.pc .language > span {
+    position: relative;
+    display: inline-block;
+}
+nav.pc .language > span:first-child:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 7px;
+    right: -9px;
+    width: 1px;
+    height: 10px;
+    background: #888;
+}
+nav.pc .language > span a {
+    display: block;
+    padding-left: 12px;
+    color: #888;
+}
+nav.pc .language > span.active a {
+    color: #ccc;
+}
+
+/* ----------------------------- */
+/* header_scroll
+/* ----------------------------- */
+header.header_scroll {
+  height: 110px;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 5px 10px #4a4a4a;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
+  transition: ease 0.2s;
+}
+header.header_scroll .logo a {
+  background: url('../images/common/logo_scroll.svg') no-repeat center;
+  background-size: 231px 100px;
+}
+header.header_scroll nav.pc li a {
+  color: #404040;
+}
+header.header_scroll nav.pc .language > span:first-child:after {
+    background: #c7c7c7;
+}
+header.header_scroll nav.pc .language a {
+  color: #c7c7c7;
+}
+header.header_scroll nav.pc .language > span.active a {
+    color: #7a7a7a;
+}
+
+/* ----------------------------- */
+/* footer
+/* ----------------------------- */
+footer {
+  padding: 60px 0 55px;
+  background: #404040;
+  color: #888888;
+  position: relative;
+}
+footer .logo {
+  float: left;
+  margin-right: 76px;
+}
+footer .logo img {
+  width: 144px;
+  height: 85px;
+}
+footer .content {
+  align-content: flex-start;
+}
+footer .f_link {
+  margin-bottom: 7px;
+}
+footer .f_link li {
+  position: relative;
+  display: inline-block;
+  margin-right: 6px;
+  font-family: "NotoSansBold";
+}
+footer .f_link li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  right: 0;
+  width: 1px;
+  height: 13px;
+  background: #888888;
+}
+footer .f_link li:last-child:after {
+  display: none;
+}
+footer .f_link li a {
+  display: block;
+  font-size: 1.7rem;
+  color: #888888;
+  padding-right: 10px;
+}
+footer .f_detail {
+  line-height: 140%;
+}
+footer .f_detail span {
+  display: inline-block;
+  padding-right: 18px;
+}
+
+/* ----------------------------- */
+/* paging
+/* ----------------------------- */
+.paging {
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+    overflow: hidden;
+}
+.paging span,
+.paging strong {
+    font-size: 1.8rem;
+    display: inline-block;
+}
+.paging strong  {
+    padding: 0 16px;
+    border-left: 1px solid #bababa;
+}
+.paging a:nth-child(2) strong {
+    border-left: 0;
+}
+
+.paging span {
+    text-indent: -500000px;
+}
+.paging a span.prev,
+.paging a span.next {
+    width: 10px;
+    padding: 0 19px;
+    background: url("/images/sub/prev.gif") no-repeat center;
+    background-size: 10px;
+}
+.paging a span.next {
+    transform: rotate(180deg);
+}
+.paging a {
+    display: inline-block;
+}
+
+.paging a.active {
+    color: #c4191f;
+}
+
+
+
+/* ----------------------------- */
+/* Responsive
+/* ----------------------------- */
+/* Layout Max Size : 1320px (1280px)
+/* Desktop Size	: 1024px < Screen <= 1280px
+/* Tablet Size : 768px <= Screen <= 1024px
+/* Mobile Size : 441px < Screen < 660px (landscape)
+/* Mobile Size : 320px < Screen < 480px (portrait)
+/* ----------------------------- */
+
+
+@media screen and (max-width:1440px) {
+  /* ----------------------------- */
+  /* Layout style
+  /* ----------------------------- */
+  .wrap {
+    max-width: 100%;
+  }
+  .wrap_in {
+    max-width: 95%;
+    margin: 0 2.5%;
+  }
+}
+
+/* ----------------------------- */
+/* header
+/* ----------------------------- */
+header {
+  width: 100%;
+}
+.header_con {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* mobile_menu */
+.mobile_menu {
+	position:fixed;
+	right:-100%;
+	top:0;
+	width:80%;
+	height:100%;
+	background:#2a2a2a;
+	z-index:9990;
+}
+.mobile_menu > ul {
+    margin-top: 78px;
+    border-top: 1px solid #333;
+}
+.mobile_menu > ul li {
+    border-bottom: 1px solid #333;
+}
+.mobile_menu > ul li a {
+    display: block;
+    padding: 15px 30px;
+    font-size: 1.7rem;
+    font-family: "NotoSansMedium";
+    color: #f8f8f8;
+}
+.m_language {
+    position: absolute;
+    top: 18px;
+    left: 30px;
+}
+.m_language > a {
+    display: inline-block;
+    height: 40px;
+    line-height: 38px;
+    padding: 0 15px;
+    color: #888;
+    border: 1px solid #404040;
+    background: #333;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media screen and (max-width:1280px) {
+
+  /* ----------------------------- */
+  /* footer
+  /* ----------------------------- */
+  footer {
+    padding: 60px 30px 55px;
+  }
+  footer .logo {
+    float: none;
+    margin-right: 76px;
+    margin-bottom: 30px;
+  }
+  footer .content {
+    float: none;
+  }
+
+}
+@media screen and (max-width:1100px) {
+    /* ----------------------------- */
+    /* header
+    /* ----------------------------- */
+    nav.pc {
+      display: none;
+    }
+    nav.mobile {
+      display: block;
+      align-content: flex-end;
+      margin-top: 26px;
+    }
+    nav.mobile .hamberger {
+      position: relative;
+      width: 32px;
+      height: 27px;
+      cursor: pointer;
+  	z-index:9999;
+    }
+    nav.mobile .hamberger span {
+      width: 100%;
+      display: block;
+      height: 3px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      transition: ease 0.2s;
+    }
+    nav.mobile .hamberger span:first-child {
+      top: 12px;
+    }
+    nav.mobile .hamberger span:nth-child(3) {
+      top: auto;
+      bottom: 0;
+    }
+    nav.mobile .open span:first-child {
+        opacity: 0;
+        left: -12px;
+    }
+    nav.mobile .open span:nth-child(3) {
+      top: 12px;
+      transform: rotate(-45deg);
+      transition: ease 0.2s;
+    }
+     nav.mobile .open span:nth-child(2) {
+         top: 12px;
+         transform: rotate(45deg);
+         transition: ease 0.2s;
+     }
+
+    nav.mobile ul {
+      /* display: none; */
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+
+  /* ----------------------------- */
+  /* header_scroll
+  /* ----------------------------- */
+  header.header_scroll {
+    height: 78px;
+  }
+  header .logo {
+    top: 26px;
+  }
+  header.header_scroll .logo a {
+    width: 205px;
+    height: 35px;
+    background: url('../images/common/logo_scroll.svg') no-repeat center;
+    background-size: 205px 35px;
+  }
+  header.header_scroll nav.mobile .hamberger span {
+    background: #404040;
+  }
+
+}
+
+@media screen and (max-width:768px) {
+    /* ----------------------------- */
+    /* header
+    /* ----------------------------- */
+    header .logo {
+      top: 24px;
+    }
+    header .logo a {
+      width: 174px;
+      height: 30px;
+      background: url('../images/common/logo.svg') no-repeat center;
+      background-size: 174px 30px;
+    }
+
+    nav.mobile {
+      display: block;
+      float: right;
+      margin-top: 21px;
+    }
+
+    /* ----------------------------- */
+    /* header_scroll
+    /* ----------------------------- */
+    header.header_scroll {
+      height: 70px;
+    }
+    header.header_scroll .logo {
+      top: 24px;
+    }
+    header.header_scroll .logo a {
+        width: 174px;
+        height: 30px;
+      background: url('../images/common/logo_scroll.svg') no-repeat center;
+      background-size: 174px 100px;
+    }
+}
+@media screen and (max-width:480px) {
+    /* ----------------------------- */
+    /* header
+    /* ----------------------------- */
+    .header_con {
+      width: 92%;
+    }
+    nav.mobile {
+      margin-top: 19px;
+    }
+    nav.mobile .hamberger {
+      width: 28px;
+      height: 20px;
+    }
+    nav.mobile .hamberger span {
+      height: 2px;
+    }
+    nav.mobile .hamberger span:first-child {
+      top: 9px;
+    }
+    /* ----------------------------- */
+    /* header_scroll
+    /* ----------------------------- */
+    header.header_scroll {
+      height: 60px;
+    }
+    header.header_scroll .logo {
+      top: 18px;
+    }
+}

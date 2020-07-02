@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletResponse;
 import com.cos.ggo.action.Action;
 import com.cos.ggo.action.board.BoardOfflineAction;
 import com.cos.ggo.action.board.BoardPartnershipAction;
+import com.cos.ggo.action.board.BoardWriteAction;
+import com.cos.ggo.action.board.BoardWriteProcAction;
 
 @WebServlet("/board")
 public class BoardController extends HttpServlet {
@@ -49,6 +51,11 @@ public class BoardController extends HttpServlet {
 		} else if (cmd.equals("partnership")) {
 			// 홈페이지 화면으로 이동
 			return new BoardPartnershipAction();
+		} else if (cmd.equals("write")) {
+			// 글쓰기 화면으로 이동
+			return new BoardWriteAction();
+		} else if (cmd.equals("writeProc")) {
+			return new BoardWriteProcAction();
 		}
 		return null;
 	}

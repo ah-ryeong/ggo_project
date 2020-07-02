@@ -1,4 +1,4 @@
-// slide jquery
+ // main 움직이는 사진 
 $(document).ready(function () {
     $('.swiper-slide').bxSlider({
         auto: true, // 자동으로 애니메이션 시작
@@ -10,3 +10,47 @@ $(document).ready(function () {
         captions: true, // 이미지 위에 텍스트를 넣을 수 있음
     });
 })
+
+// 모바일버튼
+$(function(){
+		$('.mobile .hamberger').click(function(e){
+			if($(this).hasClass('open')){
+				$(this).removeClass('open');
+				$('.mobile_menu').animate({
+					right: '-100%'
+				}, 500);
+			} else {
+				$(this).addClass('open');
+				$('.mobile_menu').animate({
+					right: '0'
+				}, 500);
+			}
+		});
+	});
+
+	$(function(){		
+		$('nav .menu1Dep a').click(function(e){
+			if($(this).hasClass('link')){
+			}else {
+				e.preventDefault();
+				if($(this).hasClass('video')){
+					videoChk = false;
+				}
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			}
+		});
+
+		$('.mobile_menu li a').click(function(e){
+			if($(this).hasClass('link')){
+			}else {
+				e.preventDefault();
+				if($(this).hasClass('video')){
+					videoChk = false;
+				}
+				$('.mobile_menu').animate({right: '-100%'}, 100);
+				$('.hamberger').removeClass('open');
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			}
+		});
+	});
+	

@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: ggo_project
+Bundle-SymbolicName: ggo_project
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.cos.ggo.action,
+ com.cos.ggo.action.board,
+ com.cos.ggo.action.user,
+ com.cos.ggo.controller,
+ com.cos.ggo.db,
+ com.cos.ggo.model,
+ com.cos.ggo.repository,
+ com.cos.ggo.util

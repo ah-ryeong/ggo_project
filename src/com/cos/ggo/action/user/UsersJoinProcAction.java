@@ -10,6 +10,7 @@ import com.cos.ggo.action.Action;
 import com.cos.ggo.model.RoleType;
 import com.cos.ggo.model.Users;
 import com.cos.ggo.repository.UsersRepository;
+import com.cos.ggo.util.SHA256;
 import com.cos.ggo.util.Script;
 
 public class UsersJoinProcAction implements Action {
@@ -25,7 +26,8 @@ public class UsersJoinProcAction implements Action {
 		
 		// 1. 파라메터 받기 (x-www-form-urlencoded 라는 MIME 타입 key = value)
 		String username = request.getParameter("username");
-		String password = request.getParameter("password");
+		String rawPassword = request.getParameter("password");
+		String password = SHA256.encodeSha256(rawPassword);
 		String email = request.getParameter("email");
 		String userRole = RoleType.USER.toString();
 		

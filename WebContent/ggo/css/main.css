@@ -1,4 +1,10 @@
 @charset "utf-8";
+/* ================================================================== */
+/* Name	: public.css
+/* Script : Public CSS
+/* Author : Design Geulggol
+/* Date	: 2020-01-30
+/* ================================================================== */
 
 h2.type01 {
   font-size: 6.5rem;
@@ -30,6 +36,7 @@ h2.type01 {
 }
 
 
+
 /* ----------------------------- */
 /* common
 /* ----------------------------- */
@@ -42,7 +49,7 @@ h2.type01 {
   width: 33px;
   height: 70px;
   margin-top: -35px;
-  background: url('ggo/images/main/arrow_line.svg') no-repeat center;
+  background: url('/images/main/arrow_line.svg') no-repeat center;
   background-size: 33px 70px;
   text-indent: -50000px;
   z-index: 999;
@@ -85,7 +92,7 @@ h2.type01 {
 }
 .v_arrow span {
     top: 50%;
-  background: url('ggo/images/main/arrow_line_w.svg') no-repeat center;
+  background: url('/images/main/arrow_line_w.svg') no-repeat center;
   background-size: 33px 70px;
 }
 .v_arrow span.prev {
@@ -245,10 +252,9 @@ h2.type01 {
   background: #ffef34 url('../images/main/product_bg.jpg') no-repeat top right;
   background-size: cover;
 }
-/* 꼬등어갖고싶은 노란색 사진부분 height임 */
-.product h2 { 
+.product h2 {
   font-size: 3.0rem;
-  line-height: 135%;
+  line-height: 130%;
   margin-bottom: 45px;
 }
 .product a {
@@ -259,6 +265,7 @@ h2.type01 {
   padding-left: 26px;
   border: 2px solid #404040;
   font-size: 2.7rem;
+  background: url('/images/main/arrow.svg') no-repeat center right 20px;
   background-size: 13px 22px;
   font-family: "NotoSansBold";
 }
@@ -336,15 +343,35 @@ h2.type01 {
 }
 
 /* ----------------------------- */
-/* product_list
+/* news_list
 /* ----------------------------- */
-.product {
+.news {
   padding: 94px 0;
 }
-.product h2 {
+.news h2 {
   margin-bottom: 93px;
 }
-.product_list .swiper-slide {
+/*
+ul.news_list li {
+  width: 32.4%;
+  float: left;
+  margin-left: 1.4%;
+  text-align: center;
+  box-shadow: 11px 11px 13px rgba(0, 0, 0, 0.15);
+}
+ul.news_list li:first-child {
+  margin-left: 0;
+}
+ul.news_list li h3 {
+  padding: 27px 30px 44px;
+  font-size: 2.0rem;
+  font-family: "NotoSansMedium";
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+*/
+.news_list .swiper-slide {
   width: 33.3%;
   float: left;
   margin-top: 10px;
@@ -352,12 +379,12 @@ h2.type01 {
   text-align: center;
 
 }
-.product_list .product_item {
+.news_list .news_item {
     width: 95.8%;
     margin-right: 4.2%;
     box-shadow: 11px 11px 13px rgba(0, 0, 0, 0.15);
 }
-.product_list .swiper-slide:first-child {
+.news_list .swiper-slide:first-child {
 }
 
 .board_img {
@@ -374,7 +401,7 @@ h2.type01 {
     right: 0;
     margin: auto;
 }
-.product_list .swiper-slide h3 {
+.news_list .swiper-slide h3 {
   padding: 27px 30px 44px;
   font-size: 2.0rem;
   font-family: "NotoSansMedium";
@@ -384,7 +411,7 @@ h2.type01 {
   background: #fff;
 }
 
-/* product_list_num */
+/* news_list_num */
 .list_num {
     margin-top: 43px;
     text-align: center;
@@ -402,33 +429,36 @@ h2.type01 {
 .list_num span.next {
     width: 30px;
     margin: 0 2px;
-    background: url('ggo/images/main/arrow_line.png') no-repeat center top 13px;
+    background: url('/images/main/arrow_line.png') no-repeat center top 13px;
 }
 .list_num span.next {
     transform: rotate(180deg);
-    background: url('ggo/images/main/arrow_line.png') no-repeat center top 6px;
+    background: url('/images/main/arrow_line.png') no-repeat center top 6px;
 }
 .list_num span.prev strong,
 .list_num span.next strong {
     display: block;
     text-indent: -100000px;
 }
-.product_list_num {
+.news_list_num {
     display: inline-block;
 }
-.product_list_num span.swiper-pagination-bullet {
+.news_list_num span.swiper-pagination-bullet {
     width: auto;
     padding: 0 13px;
     background: #fff;
     color: #585858;
 }
 
-.product_list_num span.swiper-pagination-bullet-active {
+.news_list_num span.swiper-pagination-bullet-active {
     background: #fff;
     color: #2e2e2e;
 }
-
-.product_list_num .swiper-slide {
+/* .news_list_num ul,
+.news_list_num ul li {
+  display: inline-block;
+} */
+.news_list_num .swiper-slide {
   display: inline-block;
 }
 
@@ -501,7 +531,7 @@ h2.type01 {
   line-height: 69px;
   margin: 5px 1%;
   padding: 0 30px;
-  background: #fff url('ggo/images/main/location.svg') no-repeat center right 30px;
+  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
   background-size: 29px 36px;
   max-width:500px;
 }
@@ -589,7 +619,7 @@ h2.type01 {
   display: block;
   width: 33px;
   height: 70px;
-  background: url('ggo/images/main/arrow_type02.png') no-repeat center;
+  background: url('/images/main/arrow_type02.png') no-repeat center;
   background-size: 33px 70px;
   text-indent: -50000px;
   z-index: 9999;
@@ -651,15 +681,15 @@ h2.type01 {
   font-family: "NotoSansMedium";
 }
 .map_info .info .info_con li:first-child {
-  background: url('ggo/images/main/icon_map.svg') no-repeat center left;
+  background: url('/images/main/icon_map.svg') no-repeat center left;
   background-size: 19px 24px;
 }
 .map_info .info .info_con li:nth-child(2) {
-  background: url('ggo/images/main/icon_mail.svg') no-repeat center left;
+  background: url('/images/main/icon_mail.svg') no-repeat center left;
   background-size: 19px 15px;
 }
 .map_info .info .info_con li:last-child {
-  background: url('ggo/images/main/icon_tel.svg') no-repeat center left 3px;
+  background: url('/images/main/icon_tel.svg') no-repeat center left 3px;
   background-size: 14px 20px;
 }
 
@@ -692,7 +722,7 @@ h2.type01 {
   display: block;
   padding: 6px 10px;
   margin-bottom: 10px;
-  background: #404040 url('ggo/images/main/icon_down.svg') no-repeat center right 10px;
+  background: #404040 url('/images/main/icon_down.svg') no-repeat center right 10px;
   background-size: 18px 15px;
   color: #fff;
   font-size: 1.8rem;
@@ -737,8 +767,7 @@ h2.type01 {
   /* ----------------------------- */
   .product {
     padding: 77px 20px 80px;
-    background: #ffef34 url('https://postfiles.pstatic.net/MjAyMDA2MjNfODgg/MDAxNTkyODk1NjgxNjEy.NOlF5fbPSRzx762eGVqzlHMiR4N5iDKKr60n4WYI6v4g.iNFYmbiqb4d39ks23VXU3HQ75ksEuEbcxnomjb_b-oQg.JPEG.aryeong2/product_bg.jpg?type=w966') no-repeat top left 270px;
-    /* background-image: url('../images/main/product_bg.jpg'); */
+    background: #ffef34 url('../images/main/product_bg.png') no-repeat top left 270px;
     background-size: cover;
   }
   .product h2 {
@@ -893,7 +922,7 @@ h2.type01 {
   line-height: 69px;
   margin: 5px 1%;
   padding: 0 30px;
-  background: #fff url('/images/main/location.svg') no-repeat center right 30px;
+  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
   background-size: 29px 36px;
   max-width:100%;
 }
@@ -949,13 +978,13 @@ h2.type01 {
     }
 
     /* ----------------------------- */
-    /* product_list
+    /* news_list
     /* ----------------------------- */
-    ul.product_list li {
+    ul.news_list li {
       width: 49%;
       margin-left: 2%;
     }
-    ul.product_list li h3 {
+    ul.news_list li h3 {
       padding: 17px 30px 34px;
       font-size: 1.8rem;
     }
@@ -975,7 +1004,7 @@ h2.type01 {
       line-height: 69px;
       margin: 5px 0;
       padding: 0 30px;
-      background: #fff url('/images/main/location.svg') no-repeat center right 30px;
+      background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
       background-size: 29px 36px;
     }
 
@@ -1142,7 +1171,7 @@ h2.type01 {
     height: 64px;
     line-height: 64px;
     padding: 0 20px;
-    background: #fff url('/images/main/location.svg') no-repeat center right 15px;
+    background: #fff url('../images/offline/location.svg') no-repeat center right 15px;
     background-size: 22px 28px;
   }
   .offline_list li a {
@@ -1351,16 +1380,16 @@ h2.type01 {
     }
 
   /* ----------------------------- */
-  /* product_list
+  /* news_list
   /* ----------------------------- */
-  ul.product_list li {
+  ul.news_list li {
     width: 90%;
     margin: 0 5%;
   }
-  ul.product_list li:first-child {
+  ul.news_list li:first-child {
     margin-left: 5%;
   }
-  ul.product_list li h3 {
+  ul.news_list li h3 {
     padding: 17px 30px 34px;
     font-size: 1.8rem;
   }

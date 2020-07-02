@@ -10,16 +10,16 @@
     <link href="ggo/css/common.css" rel="stylesheet" type="text/css" />
     <link href="ggo/css/main.css" rel="stylesheet" type="text/css" />
     <link href="ggo/css/board.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="ggo/css/partnership.css" type="text/css" />
+    <link href="ggo/css/public.css" rel="stylesheet" type="text/css" />
+    <link href="ggo/css/partnership.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body>	
 	<!-- sub_visual -->
 	<div class="s_visual">
 	  <div class="s_ti">부산대표캐릭터 <strong>발달린 꼬등어</strong></div>
 	</div>
 	
 	<!-- //sub_visual -->
-	
 	<!-- sub_contents -->
 	<div class="s_contents03 wrap_in s_contents">
 		<h1>제휴제안</h1>
@@ -67,7 +67,7 @@
 		</form>
 	</div>
 	<!-- // sub_contents -->
-<script src="../js/partnership.js"></script>
+<script src="ggo/js/partnership.js"></script>
 <%@include file="../include/footer.jsp" %>
 </body>
 </html>

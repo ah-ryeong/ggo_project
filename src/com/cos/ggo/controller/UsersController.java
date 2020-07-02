@@ -11,8 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 import com.cos.ggo.action.Action;
 import com.cos.ggo.action.HomeAction;
 import com.cos.ggo.action.user.UsersJoinProcAction;
+import com.cos.ggo.action.user.UsersLoginAction;
 import com.cos.ggo.action.user.UsersLoginProcAction;
 import com.cos.ggo.action.user.UsersLogoutAction;
+import com.cos.ggo.action.user.UsersMyPageAction;
+import com.cos.ggo.action.user.UsersMyPageProcAction;
+import com.cos.ggo.action.user.UsersUsernameCheckAction;
 import com.cos.ggo.action.user.UsersjoinAction;
 
 @WebServlet("/user")
@@ -47,11 +51,13 @@ public class UsersController extends HttpServlet {
 	
 	public Action router(String cmd) {
 		if(cmd.equals("join")) {
-			// 회원가입/로그인페이지로 이동한다.
+			// 회원가입페이지로 이동
 			return new UsersjoinAction();			
 		} else if(cmd.equals("joinProc")) {
 			// 회원가입을 진행 한 후 -> index.jsp로 이동 
 			return new UsersJoinProcAction();
+		} else if (cmd.equals("login")) {
+			return new UsersLoginAction();
 		} else if(cmd.equals("loginProc")) {
 			// 로그인 진행 한 후 -> index.jsp로 이동 
 			return new UsersLoginProcAction();
@@ -61,6 +67,15 @@ public class UsersController extends HttpServlet {
 		} else if (cmd.equals("logout")) {
 			// 로그아웃
 			return new UsersLogoutAction();
+		} else if (cmd.equals("MyPage")) {
+			// 회원수정
+			return new UsersMyPageAction();
+		} else if (cmd.equals("MyPageProc")) {
+			// 회원수정
+			return new UsersMyPageProcAction();
+		} else if (cmd.equals("usernameCheck")) {
+			// ID 중복체크
+			return new UsersUsernameCheckAction();
 		}
 		return null;
 	}
