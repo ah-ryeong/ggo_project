@@ -336,7 +336,7 @@
   /* s_visual
   /* ----------------------------- */
   .s_visual {
-    background: url("/images/sub/s_visual_tt.jpg") no-repeat top center;
+    background: url("../images/sub/s_visual_tt.jpg") no-repeat top center;
     background-size: cover;
   }
 }
@@ -385,7 +385,7 @@
   /* ----------------------------- */
   .s_visual {
     height: 300px;
-    background: url("/images/sub/s_visual_t.jpg") no-repeat center;
+    background: url("../images/sub/s_visual_t.jpg") no-repeat center;
     background-size: cover;
   }
 
@@ -430,7 +430,7 @@
   /* ----------------------------- */
   .s_visual {
     height: 250px;
-    background: url("/images/sub/s_visual_t.jpg") no-repeat center;
+    background: url("../images/sub/s_visual_t.jpg") no-repeat center;
     background-size: cover;
   }
   .s_visual .s_ti {
@@ -537,7 +537,7 @@
   /* ----------------------------- */
   .s_visual {
     height: 220px;
-    background: url("/images/sub/s_visual_m.jpg") no-repeat center;
+    background: url("../images/sub/s_visual_m.jpg") no-repeat center;
     background-size: cover;
   }
   /* ----------------------------- */
@@ -571,7 +571,7 @@
   /* ----------------------------- */
   .s_visual {
     height: 220px;
-    background: url("/images/sub/s_visual_mm.jpg") no-repeat center;
+    background: url("../images/sub/s_visual_mm.jpg") no-repeat center;
     background-size: cover;
   }
 

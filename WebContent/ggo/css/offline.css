@@ -47,8 +47,8 @@ h2.type01 {
 }
 .offline_con > img { 
   position: absolute;
-  right: 0;
-  bottom: -45px;
+  right: -170px;
+  bottom: -23px;
 }
 .offline_con > p {
     width: 60%;
@@ -87,7 +87,7 @@ h2.type01 {
 }
 
 .offline_wrap { 
-	width:1000px;
+	width:1250px;
 	margin:0 auto;
 }
 
@@ -97,7 +97,6 @@ h2.type01 {
   margin: 0 auto 55px;
 }
 .offline_list li {
-  float: left;
   width: 96%;
   height: 69px;
   line-height: 69px;
@@ -106,6 +105,7 @@ h2.type01 {
   background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
   background-size: 29px 36px;
   max-width:500px;
+  list-style: none;
 }
 .offline_list li a {
   padding-right: 30px;
