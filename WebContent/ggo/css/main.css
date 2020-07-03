@@ -81,23 +81,9 @@ h2.type01 {
   height: 100%;
   position: relative;
 }
-.arrow_in { /*메인에 일단 없음 */
-  position: relative;
-}
 .visual_con .swiper-slide {
     text-align: center;
     background: #333;
-}
-.v_arrow span { /*메인에 일단 없음 */
-    top: 50%;
-  background: url('/images/main/arrow_line_w.svg') no-repeat center;
-  background-size: 33px 70px;
-}
-.v_arrow span.prev { /*메인에 일단 없음 */
-  left: 27px;
-}
-.v_arrow span.next { /*메인에 일단 없음 */
-  right: 27px;
 }
 .vi_text { /*부산 대표 캐릭터 발달린 꼬등어 사진 가운데 멘트*/
   position: absolute;
@@ -126,16 +112,6 @@ h2.type01 {
   bottom: 87px;
   z-index: 990;
 }
-
-.v_paging .swiper-pagination-bullet { /*swiper-pagination-bullet 얘 메인에 없음*/
-	background:none;
-	opacity:1;
-}
-.v_paging .swiper-pagination-bullet-active { /*swiper-pagination-bullet-active 얘 메인에 없음*/
-	background: #fff;
-}
-
-
 /* ----------------------------- */
 /* characters
 /* ----------------------------- */
@@ -254,18 +230,6 @@ h2.type01 {
   font-size: 3.0rem;
   line-height: 130%;
   margin-bottom: 45px;
-}
-.product a { /*일단 홈에 없음*/
-  display: block;
-  max-width: 258px;
-  height: 56px;
-  line-height: 52px;
-  padding-left: 26px;
-  border: 2px solid #404040;
-  font-size: 2.7rem;
-  background: url('/images/main/arrow.svg') no-repeat center right 20px;
-  background-size: 13px 22px;
-  font-family: "NotoSansBold";
 }
 
 /* ----------------------------- */
@@ -403,9 +367,6 @@ h2.type01 {
     line-height: 150%;
     margin-bottom: 40px;
   }
-  .product a { /*일단 홈에 없음*/
-    font-size: 2.0rem;
-  }
 
 }
 
@@ -468,11 +429,6 @@ h2.type01 {
   /* ----------------------------- */
   /* visual
   /* ----------------------------- */
-  .v_arrow span { /*일단 메인에 없음 */
-    top: 60%;
-    background: url('/images/main/arrow_line_w.svg') no-repeat center;
-    background-size: 22px 47px;
-  }
   .vi_text p { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     margin-bottom: 20px;
     font-size: 1.8rem;
@@ -656,10 +612,6 @@ h2.type01 {
   .vi_text { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     top: 35%;
   }
-  .v_arrow span { /*일단 홈에 없음*/
-    background: url('/images/main/arrow_line_w.svg') no-repeat center;
-    background-size: 16px 35px;
-  }
 
   /* ----------------------------- */
   /* characters
@@ -737,9 +689,6 @@ h2.type01 {
     .m_block { /*홈에 없음*/
         display: block;
     }
-    .v_arrow span { /*일단 홈에 없음 */
-        top: 50%;
-    }
     .vi_text { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
       top: 42%;
     }
@@ -747,15 +696,6 @@ h2.type01 {
       margin-bottom: 17px;
       font-size: 1.6rem;
       color: #fff;
-    }
-
-    /* ----------------------------- */
-    /* product
-    /* ----------------------------- */
-    .product a { /*일단 홈에 없음 */
-      font-size: 1.7rem;
-      background: url('/images/main/arrow.svg') no-repeat center right 20px;
-      background-size: 8px 14px;
     }
 
   /* ----------------------------- */
