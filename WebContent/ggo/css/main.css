@@ -2,8 +2,6 @@
 /* ================================================================== */
 /* Name	: public.css
 /* Script : Public CSS
-/* Author : Design Geulggol
-/* Date	: 2020-01-30
 /* ================================================================== */
 
 h2.type01 {
@@ -77,31 +75,31 @@ h2.type01 {
 }
 
 /* ----------------------------- */
-/* visual
+/* visual home꺼
 /* ----------------------------- */
 .visual_con {
   height: 100%;
   position: relative;
 }
-.arrow_in {
+.arrow_in { /*메인에 일단 없음 */
   position: relative;
 }
 .visual_con .swiper-slide {
     text-align: center;
     background: #333;
 }
-.v_arrow span {
+.v_arrow span { /*메인에 일단 없음 */
     top: 50%;
   background: url('/images/main/arrow_line_w.svg') no-repeat center;
   background-size: 33px 70px;
 }
-.v_arrow span.prev {
+.v_arrow span.prev { /*메인에 일단 없음 */
   left: 27px;
 }
-.v_arrow span.next {
+.v_arrow span.next { /*메인에 일단 없음 */
   right: 27px;
 }
-.vi_text {
+.vi_text { /*부산 대표 캐릭터 발달린 꼬등어 사진 가운데 멘트*/
   position: absolute;
   top: 40%;
   left: 0;
@@ -110,30 +108,30 @@ h2.type01 {
   text-align: center;
   z-index: 99;
 }
-.vi_text p {
+.vi_text p { /*부산 대표 캐릭터 발달린 꼬등어 사진 가운데 멘트*/
   margin-bottom: 30px;
   font-size: 2.2rem;
   color: #fff;
 }
-.vi_text p strong {
+.vi_text p strong { /*부산 대표 캐릭터 발달린 꼬등어 사진 가운데 멘트*/
   font-family: "NotoSansBold";
 }
-.vi_text img {
+.vi_text img { /*부산 대표 캐릭터 발달린 꼬등어 사진 가운데 멘트*/
   width: 180px;
   height: 88px;
 }
-.v_paging {
+.v_paging { 
   width: 100%;
   position: absolute;
   bottom: 87px;
   z-index: 990;
 }
 
-.v_paging .swiper-pagination-bullet {
+.v_paging .swiper-pagination-bullet { /*swiper-pagination-bullet 얘 메인에 없음*/
 	background:none;
 	opacity:1;
 }
-.v_paging .swiper-pagination-bullet-active {
+.v_paging .swiper-pagination-bullet-active { /*swiper-pagination-bullet-active 얘 메인에 없음*/
 	background: #fff;
 }
 
@@ -247,17 +245,17 @@ h2.type01 {
 /* ----------------------------- */
 /* product
 /* ----------------------------- */
-.product {
+.product { /*홈화면에 있음~*/
   padding: 107px 0 120px;
   background: #ffef34 url('../images/main/product_bg.jpg') no-repeat top right;
   background-size: cover;
 }
-.product h2 {
+.product h2 { /*home에 product 글자*/
   font-size: 3.0rem;
   line-height: 130%;
   margin-bottom: 45px;
 }
-.product a {
+.product a { /*일단 홈에 없음*/
   display: block;
   max-width: 258px;
   height: 56px;
@@ -269,376 +267,6 @@ h2.type01 {
   background-size: 13px 22px;
   font-family: "NotoSansBold";
 }
-
-/* ----------------------------- */
-/* contents
-/* ----------------------------- */
-.contents {
-    padding-top: 94px;
-    text-align: center;
-}
-.contents h2 span {
-  display: block;
-  font-size: 2.0rem;
-  font-family: "NotoSansMedium";
-}
-.content_box {
-  padding: 110px 0;
-}
-.con_animation {
-  padding-top: 105px;
-  border-bottom: 1px solid #404040;
-}
-.content_box h3 {
-  padding: 45px 0 26px;
-  font-size: 2.3rem;
-  font-family: "NotoSansMedium";
-}
-.content_box h3 strong {
-  display: inline-block;
-  padding-right: 17px;
-  font-size: 3.6rem;
-  font-family: "NotoSansBold";
-}
-.content_box a {
-  display: block;
-  max-width: 436px;
-  height: 56px;
-  line-height: 52px;
-  margin: 0 auto;
-  border: 2px solid #404040;
-  font-size: 2.7rem;
-  font-family: "NotoSansBold";
-}
-
-
-/* ----------------------------- */
-/* partnership
-/* ----------------------------- */
-.partnership {
-  padding: 95px 0 110px;
-  text-align: center;
-  background: #ffef34;
-}
-.partnership p {
-  width: 40%;
-  margin: 23px auto 85px;
-  font-size: 2.0rem;
-  font-family: "NotoSansMedium";
-  line-height: 180%;
-}
-.partnership a {
-  display: block;
-  max-width: 448px;
-  height: 70px;
-  line-height: 70px;
-  margin: 0 auto;
-  color: #ffee00;
-  background: #404040;
-  font-family: "NotoSansBold";
-  font-size: 2.8rem;
-}
-.partnership img {
-  margin-top: -8px;
-}
-
-/* ----------------------------- */
-/* news_list
-/* ----------------------------- */
-.news {
-  padding: 94px 0;
-}
-.news h2 {
-  margin-bottom: 93px;
-}
-/*
-ul.news_list li {
-  width: 32.4%;
-  float: left;
-  margin-left: 1.4%;
-  text-align: center;
-  box-shadow: 11px 11px 13px rgba(0, 0, 0, 0.15);
-}
-ul.news_list li:first-child {
-  margin-left: 0;
-}
-ul.news_list li h3 {
-  padding: 27px 30px 44px;
-  font-size: 2.0rem;
-  font-family: "NotoSansMedium";
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-*/
-.news_list .swiper-slide {
-  width: 33.3%;
-  float: left;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  text-align: center;
-
-}
-.news_list .news_item {
-    width: 95.8%;
-    margin-right: 4.2%;
-    box-shadow: 11px 11px 13px rgba(0, 0, 0, 0.15);
-}
-.news_list .swiper-slide:first-child {
-}
-
-.board_img {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-    overflow: hidden;
-    background: #f8f8f8;
-}
-.board_img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.news_list .swiper-slide h3 {
-  padding: 27px 30px 44px;
-  font-size: 2.0rem;
-  font-family: "NotoSansMedium";
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  background: #fff;
-}
-
-/* news_list_num */
-.list_num {
-    margin-top: 43px;
-    text-align: center;
-}
-.list_num span {
-  display: inline-block;
-  opacity: 1;
-  height: 30px;
-  font-size: 1.8rem;
-  border-radius: 0;
-  cursor:pointer;
-  overflow:hidden;
-}
-.list_num span.prev,
-.list_num span.next {
-    width: 30px;
-    margin: 0 2px;
-    background: url('/images/main/arrow_line.png') no-repeat center top 13px;
-}
-.list_num span.next {
-    transform: rotate(180deg);
-    background: url('/images/main/arrow_line.png') no-repeat center top 6px;
-}
-.list_num span.prev strong,
-.list_num span.next strong {
-    display: block;
-    text-indent: -100000px;
-}
-.news_list_num {
-    display: inline-block;
-}
-.news_list_num span.swiper-pagination-bullet {
-    width: auto;
-    padding: 0 13px;
-    background: #fff;
-    color: #585858;
-}
-
-.news_list_num span.swiper-pagination-bullet-active {
-    background: #fff;
-    color: #2e2e2e;
-}
-/* .news_list_num ul,
-.news_list_num ul li {
-  display: inline-block;
-} */
-.news_list_num .swiper-slide {
-  display: inline-block;
-}
-
-/* ----------------------------- */
-/* offline
-/* ----------------------------- */
-.offline {
-  padding-top: 104px;
-  background: #ffef34;
-}
-.offline_con {
-  position: relative;
-  padding-bottom: 112px;
-}
-.offline_con > img {
-  position: absolute;
-  right: 0;
-  bottom: -45px;
-}
-.offline_con > p {
-    width: 60%;
-    margin: 0 auto 30px;
-    text-align: center;
-}
-
-/* offline_tab */
-.offline_tab {
-  margin: 43px 0 25px;
-  font-size: 0;
-  letter-spacing: -5px;
-  text-align: center;
-}
-.offline_tab li {
-  width: 269px;
-  height: 66px;
-  line-height: 62px;
-  font-size: 1.8rem;
-  letter-spacing: 0;
-  display: inline-block;
-  border: 2px solid #404040;
-  font-size: 1.8rem;
-  color: #000;
-  cursor:pointer;
-}
-.offline_tab li:first-child {
-  border-radius: 34px 0 0 34px;
-}
-.offline_tab li:last-child {
-  border-radius: 0 34px 34px 0;
-}
-.offline_tab li.active {
-  background: #404040;
-  color: #ffef34;
-}
-
-.offline_wrap {
-	width:1000px;
-	margin:0 auto;
-}
-
-/* offline_list */
-.offline_list {
-  width: 100%;
-  margin: 0 auto 55px;
-}
-.offline_list li {
-  float: left;
-  width: 96%;
-  height: 69px;
-  line-height: 69px;
-  margin: 5px 1%;
-  padding: 0 30px;
-  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
-  background-size: 29px 36px;
-  max-width:500px;
-}
-.offline_list li a {
-  padding-right: 30px;
-  display: block;
-  font-size: 1.9rem;
-  color: #2e2e2e;
-  font-family: "NotoSansBold";
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.offline_list li a span {
-  display: inline-block;
-  color: #8a8a8a;
-  margin-left: 10px;
-  font-family: "NotoSansMedium";
-}
-.offline_bar {
-  text-align: center;
-  font-size: 0;
-  letter-spacing: -5px;
-  margin-top:55px;
-}
-.offline_bar span {
-  display: inline-block;
-  width: 79px;
-  height: 3px;
-  margin: 0 5px;
-  background: #fffdeb;
-}
-.offline_bar span.swiper-pagination-bullet-active {
-  background: #7f771a;
-}
-
-.offline_bar .swiper-pagination-bullet {
-	opacity:1;
-	border-radius:0;
-}
-
-
-.offline_bar1 {
-  text-align: center;
-  font-size: 0;
-  letter-spacing: -5px;
-  margin-top:55px;
-}
-.offline_bar1 span {
-  display: inline-block;
-  width: 79px;
-  height: 3px;
-  margin: 0 5px;
-  background: #fffdeb;
-}
-.offline_bar1 span.swiper-pagination-bullet-active {
-  background: #7f771a;
-}
-
-.offline_bar1 .swiper-pagination-bullet {
-	opacity:1;
-	border-radius:0;
-}
-
-
-/* offline_arrow */
-.offline_arrow a {
-  display: block;
-  position: absolute;
-  top: 41%;
-  left: -13px;
-}
-.offline_arrow a.prev {
-  transform: rotate(180deg);
-}
-.offline_arrow a.next {
-  left: auto;
-  right: -13px;
-}
-
-.offline_arrow span {
-  position: absolute;
-  top: 41%;
-  left:-13px;
-  display: block;
-  width: 33px;
-  height: 70px;
-  background: url('/images/main/arrow_type02.png') no-repeat center;
-  background-size: 33px 70px;
-  text-indent: -50000px;
-  z-index: 9999;
-  cursor:pointer;
-  overflow:hidden;
-}
-.offline_arrow span.next {
-  left: auto;
-  right: -13px;
-}
-
-.offline_arrow span.prev {
-  transform: rotate(180deg);
-}
-
-
-
-
-
 
 /* ----------------------------- */
 /* contact_us
@@ -745,7 +373,7 @@ ul.news_list li h3 {
 
 @media screen and (max-width:1440px) {
     /* ----------------------------- */
-    /* visual
+    /* visual home 화면
     /* ----------------------------- */
     .v_paging {
         bottom: 37px;
@@ -775,7 +403,7 @@ ul.news_list li h3 {
     line-height: 150%;
     margin-bottom: 40px;
   }
-  .product a {
+  .product a { /*일단 홈에 없음*/
     font-size: 2.0rem;
   }
 
@@ -792,10 +420,10 @@ ul.news_list li h3 {
   .v_arrow span {
       top: 55%;
   }
-  .vi_text p {
+  .vi_text p { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     font-size: 2.0rem;
   }
-  .vi_text img {
+  .vi_text img { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     width: 132px;
     height: 64px;
   }
@@ -816,43 +444,6 @@ ul.news_list li h3 {
   .c_common p {
     width: 70%;
   }
-
-  /* ----------------------------- */
-  /* partnership
-  /* ----------------------------- */
-  .partnership p {
-    width: 60%;
-  }
-
-
-  /* ----------------------------- */
-  /* offline
-  /* ----------------------------- */
-
-  /* offline_tab */
-
-  /* offline_list */
-  .offline_list {
-    width: 90%;
-    margin: 0 auto 55px;
-  }
-  .offline_bar span {
-    width: 39px;
-  }
-
-  /* offline_arrow */
-  .offline_arrow span {
-    top: 41%;
-    left: 0;
-    width: 18px;
-	background-size: 18px 47px;
-  }
-  .offline_arrow span.prev {
-  }
-  .offline_arrow span.next {
-    right: 0;
-  }
-
 
 }
 
@@ -877,12 +468,12 @@ ul.news_list li h3 {
   /* ----------------------------- */
   /* visual
   /* ----------------------------- */
-  .v_arrow span {
+  .v_arrow span { /*일단 메인에 없음 */
     top: 60%;
     background: url('/images/main/arrow_line_w.svg') no-repeat center;
     background-size: 22px 47px;
   }
-  .vi_text p {
+  .vi_text p { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     margin-bottom: 20px;
     font-size: 1.8rem;
   }
@@ -894,10 +485,7 @@ ul.news_list li h3 {
     width: 80%;
     font-size: 1.9rem;
   }
-  /* ----------------------------- */
-  /* contents
-  /* ----------------------------- */
-
+  
   /* ----------------------------- */
   /* contact_us
   /* ----------------------------- */
@@ -906,36 +494,13 @@ ul.news_list li h3 {
     padding: 26px 0 0 50px;
   }
 
-/* offline_list */
-.offline_wrap {
-	width:100%;
-	margin:0 auto;
-}
-.offline_list {
-  width: 90%;
-  margin: 0 auto 55px;
-}
-.offline_list li {
-  float: left;
-  width: 96%;
-  height: 69px;
-  line-height: 69px;
-  margin: 5px 1%;
-  padding: 0 30px;
-  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
-  background-size: 29px 36px;
-  max-width:100%;
-}
-
-
-
 }
   @media screen and (max-width:960px) {
       /* ----------------------------- */
       /* visual
       /* ----------------------------- */
 
-      .vi_text img {
+      .vi_text img { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/ 
         width: 106px;
         height: 52px;
       }
@@ -971,45 +536,6 @@ ul.news_list li h3 {
     }
 
     /* ----------------------------- */
-    /* partnership
-    /* ----------------------------- */
-    .partnership p {
-      width: 70%;
-    }
-
-    /* ----------------------------- */
-    /* news_list
-    /* ----------------------------- */
-    ul.news_list li {
-      width: 49%;
-      margin-left: 2%;
-    }
-    ul.news_list li h3 {
-      padding: 17px 30px 34px;
-      font-size: 1.8rem;
-    }
-
-    /* ----------------------------- */
-    /* offline
-    /* ----------------------------- */
-    /* offline_list */
-    .offline_list {
-      width: 80%;
-      margin: 0 auto 55px;
-    }
-    .offline_list li {
-      float: left;
-      width: 100%;
-      height: 69px;
-      line-height: 69px;
-      margin: 5px 0;
-      padding: 0 30px;
-      background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
-      background-size: 29px 36px;
-    }
-
-
-    /* ----------------------------- */
     /* contact_us
     /* ----------------------------- */
     .map_info .main_map,
@@ -1042,7 +568,7 @@ ul.news_list li h3 {
   }
 
   /* ----------------------------- */
-  /* visual
+  /* visual home 화면 
   /* ----------------------------- */
 
   .v_paging {
@@ -1098,39 +624,6 @@ ul.news_list li h3 {
     margin: 0 auto;
   }
 
-
-  /* ----------------------------- */
-  /* contents
-  /* ----------------------------- */
-  .contents h2 span {
-    font-size: 1.8rem;
-  }
-  .content_box {
-    padding: 50px 0;
-  }
-  .content_box h3 {
-    padding: 40px 0 21px;
-    font-size: 1.7rem;
-  }
-  .content_box h3 strong {
-    font-size: 3.0rem;
-  }
-  .content_box a {
-    font-size: 2.2rem;
-  }
-
-  /* ----------------------------- */
-  /* partnership
-  /* ----------------------------- */
-  .partnership p {
-    font-size: 1.8rem;
-    margin: 23px auto 45px;
-  }
-  .partnership img {
-    width: 240px;
-    margin-top: -8px;
-  }
-
   /* ----------------------------- */
   /* contact_us
   /* ----------------------------- */
@@ -1139,58 +632,6 @@ ul.news_list li h3 {
     padding: 36px 20px 0;
   }
 
-  /* ----------------------------- */
-  /* offline
-  /* ----------------------------- */
-  .offline {
-    padding-top: 84px;
-  }
-  .offline_con > p {
-      width: 80%;
-      margin: 0 auto 20px;
-  }
-  /* offline_tab */
-  .offline_tab {
-      width: 100%;
-      padding: 0 24px;
-      margin: 43px auto 25px;
-  }
-  .offline_tab li {
-    width: 50%;
-    height: 56px;
-    line-height: 52px;
-    font-size: 1.5rem;
-  }
-  /* offline_list */
-  .offline_list {
-    width: 100%;
-    padding: 0 24px;
-  }
-  .offline_list li {
-      width: 100%;
-    height: 64px;
-    line-height: 64px;
-    padding: 0 20px;
-    background: #fff url('../images/offline/location.svg') no-repeat center right 15px;
-    background-size: 22px 28px;
-  }
-  .offline_list li a {
-    padding-right: 20px;
-    font-size: 1.6rem;
-    font-family: "NotoSansBold";
-  }
-  .offline_bar span,
-  .offline_bar1 span {
-      width: 40px;
-  }
-  /* offline_arrow */
-  .offline_arrow span {
-    position: absolute;
-    width: 16px;
-    height: 32px;
-    background: url('/images/main/arrow_type02.png') no-repeat center;
-    background-size: 16px 32px;
-  }
 }
 
 
@@ -1210,12 +651,12 @@ ul.news_list li h3 {
   }
 
   /* ----------------------------- */
-  /* visual
+  /* visual home 화면 
   /* ----------------------------- */
-  .vi_text {
+  .vi_text { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
     top: 35%;
   }
-  .v_arrow span {
+  .v_arrow span { /*일단 홈에 없음*/
     background: url('/images/main/arrow_line_w.svg') no-repeat center;
     background-size: 16px 35px;
   }
@@ -1283,42 +724,6 @@ ul.news_list li h3 {
       display: none;
   }
 
-
-  /* ----------------------------- */
-  /* partnership
-  /* ----------------------------- */
-  .partnership {
-    padding: 85px 0 90px;
-  }
-  .partnership p {
-    width: 90%;
-  }
-  .partnership a {
-    height: 64px;
-    line-height: 64px;
-    font-size: 2.2rem;
-  }
-
-  /* ----------------------------- */
-  /* offline
-  /* ----------------------------- */
-  .offline_con {
-      padding-bottom: 82px;
-  }
-  .offline_con > img {
-      width: 90%;
-  }
-  .offline_list li {
-    float: left;
-    height: auto;
-    line-height: 160%;
-    padding: 10px 20px 7px;
-  }
-  .offline_list li a span {
-    display: block;
-    margin-left: 0;
-  }
-
 }
 
 /* Mobile : portrait */
@@ -1326,19 +731,19 @@ ul.news_list li h3 {
     /* ----------------------------- */
     /* visual
     /* ----------------------------- */
-    .t_block {
+    .t_block { /*홈에 없음*/
         display: none;
     }
-    .m_block {
+    .m_block { /*홈에 없음*/
         display: block;
     }
-    .v_arrow span {
+    .v_arrow span { /*일단 홈에 없음 */
         top: 50%;
     }
-    .vi_text {
+    .vi_text { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
       top: 42%;
     }
-    .vi_text p {
+    .vi_text p { /*부산 대표 캐릭터 발달린 꼬등어 메인 사진 가운데 멘트*/
       margin-bottom: 17px;
       font-size: 1.6rem;
       color: #fff;
@@ -1347,64 +752,11 @@ ul.news_list li h3 {
     /* ----------------------------- */
     /* product
     /* ----------------------------- */
-    .product a {
+    .product a { /*일단 홈에 없음 */
       font-size: 1.7rem;
       background: url('/images/main/arrow.svg') no-repeat center right 20px;
       background-size: 8px 14px;
     }
-
-    /* ----------------------------- */
-    /* contents
-    /* ----------------------------- */
-    .content_box h3 {
-      padding: 25px 0 16px;
-    }
-    .content_box h3 strong {
-      display: block;
-      padding-right: 0;
-      font-size: 2.0rem;
-    }
-    .content_box a {
-      max-width: 70%;
-      font-size: 1.7rem;
-    }
-
-    /* ----------------------------- */
-    /* partnership
-    /* ----------------------------- */
-    .partnership a {
-      max-width: 70%;
-      height: 60px;
-      line-height: 60px;
-      font-size: 1.7rem;
-    }
-
-  /* ----------------------------- */
-  /* news_list
-  /* ----------------------------- */
-  ul.news_list li {
-    width: 90%;
-    margin: 0 5%;
-  }
-  ul.news_list li:first-child {
-    margin-left: 5%;
-  }
-  ul.news_list li h3 {
-    padding: 17px 30px 34px;
-    font-size: 1.8rem;
-  }
-
-  /* ----------------------------- */
-  /* offline
-  /* ----------------------------- */
-  .offline_con {
-      padding-bottom: 62px;
-  }
-  .offline_con > p {
-      width: 88%;
-      margin: 0 auto 20px;
-      font-size: 1.4rem;
-  }
 
   /* ----------------------------- */
   /* contact_us

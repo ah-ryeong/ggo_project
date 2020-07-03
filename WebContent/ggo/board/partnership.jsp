@@ -8,7 +8,6 @@
 <title>제휴제안 > 커뮤니티 > 꼬등어</title>
 <!--css-->
     <link href="ggo/css/common.css" rel="stylesheet" type="text/css" />
-    <link href="ggo/css/main.css" rel="stylesheet" type="text/css" />
     <link href="ggo/css/board.css" rel="stylesheet" type="text/css" />
     <link href="ggo/css/public.css" rel="stylesheet" type="text/css" />
     <link href="ggo/css/partnership.css" rel="stylesheet" type="text/css" />

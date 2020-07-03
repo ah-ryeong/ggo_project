@@ -1,0 +1,415 @@
+@charset "UTF-8";
+
+/* ================================================================== */
+/* Name	: public.css
+/* Script : Public CSS
+/* ================================================================== */
+
+h2.type01 {
+  font-size: 6.5rem;
+  font-family: "RobotoBold";
+  text-align: center;
+  color: #404040;
+}
+.p_block {
+    display: block;
+}
+.p_block img {
+    max-width: auto;
+    width: 100%;
+}
+.t_block {
+    display: none;
+}
+.m_block {
+    display: none;
+}
+
+.id_height {
+    position: relative;
+}
+.id_height div {
+    position: absolute;
+    height: 100px;
+    top: -100px;
+}
+
+/* ----------------------------- */
+/* offline
+/* ----------------------------- */
+.offline { /*메인 div*/
+  padding-top: 104px;
+  background: #ffef34;
+}
+.offline_con { /*있음*/
+  position: relative;
+  padding-bottom: 112px;
+}
+.offline_con > img { /*있음*/
+  position: absolute;
+  right: 0;
+  bottom: -45px;
+}
+.offline_con > p { /*있음*/
+    width: 60%;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+/* offline_tab */
+.offline_tab { /*부산 경남 수도권 버튼 바뀌는거*/
+  margin: 43px 0 25px;
+  font-size: 0;
+  letter-spacing: -5px;
+  text-align: center;
+}
+.offline_tab li { /*부산 경남 수도권 버튼 바뀌는거*/
+  width: 269px;
+  height: 66px;
+  line-height: 62px;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  display: inline-block;
+  border: 2px solid #404040;
+  font-size: 1.8rem;
+  color: #000;
+  cursor:pointer;
+}
+.offline_tab li:first-child { /*부산 경남 수도권 버튼 바뀌는거*/
+  border-radius: 34px 0 0 34px;
+}
+.offline_tab li:last-child { /*부산 경남 수도권 버튼 바뀌는거*/
+  border-radius: 0 34px 34px 0;
+}
+.offline_tab li.active { /*부산 경남 수도권 버튼 바뀌는거*/
+  background: #404040;
+  color: #ffef34;
+}
+
+.offline_wrap { /*있음*/
+	width:1000px;
+	margin:0 auto;
+}
+
+/* offline_list */
+.offline_list {
+  width: 100%;
+  margin: 0 auto 55px;
+}
+.offline_list li {
+  float: left;
+  width: 96%;
+  height: 69px;
+  line-height: 69px;
+  margin: 5px 1%;
+  padding: 0 30px;
+  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
+  background-size: 29px 36px;
+  max-width:500px;
+}
+.offline_list li a {
+  padding-right: 30px;
+  display: block;
+  font-size: 1.9rem;
+  color: #2e2e2e;
+  font-family: "NotoSansBold";
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.offline_list li a span {
+  display: inline-block;
+  color: #8a8a8a;
+  margin-left: 10px;
+  font-family: "NotoSansMedium";
+}
+.offline_bar { /*없음*/
+  text-align: center;
+  font-size: 0;
+  letter-spacing: -5px;
+  margin-top:55px;
+}
+.offline_bar span { /*없음*/
+  display: inline-block;
+  width: 79px;
+  height: 3px;
+  margin: 0 5px;
+  background: #fffdeb;
+}
+.offline_bar span.swiper-pagination-bullet-active { /*없음*/
+  background: #7f771a;
+}
+
+.offline_bar .swiper-pagination-bullet { /*없음*/
+	opacity:1;
+	border-radius:0;
+}
+
+
+.offline_bar1 { /*offline_bar 다 뺐음*/
+  text-align: center;
+  font-size: 0;
+  letter-spacing: -5px;
+  margin-top:55px;
+}
+.offline_bar1 span { /*offline_bar 다 뺐음*/
+  display: inline-block;
+  width: 79px;
+  height: 3px;
+  margin: 0 5px;
+  background: #fffdeb;
+}
+.offline_bar1 span.swiper-pagination-bullet-active { /*offline_bar 다 뺐음*/
+  background: #7f771a;
+}
+
+.offline_bar1 .swiper-pagination-bullet { /*offline_bar 다 뺐음*/
+	opacity:1;
+	border-radius:0;
+}
+
+
+/* offline_arrow */
+.offline_arrow a { /* offline_arrow 없는거같음 */
+  display: block;
+  position: absolute;
+  top: 41%;
+  left: -13px;
+}
+.offline_arrow a.prev { /* offline_arrow 없는거같음 */
+  transform: rotate(180deg);
+}
+.offline_arrow a.next { /* offline_arrow 없는거같음 */
+  left: auto;
+  right: -13px;
+}
+
+.offline_arrow span { /* offline_arrow 없는거같음 */
+  position: absolute;
+  top: 41%;
+  left:-13px;
+  display: block;
+  width: 33px;
+  height: 70px;
+  background: url('/images/main/arrow_type02.png') no-repeat center;
+  background-size: 33px 70px;
+  text-indent: -50000px;
+  z-index: 9999;
+  cursor:pointer;
+  overflow:hidden;
+}
+.offline_arrow span.next { /* offline_arrow 없는거같음 */
+  left: auto;
+  right: -13px;
+}
+
+.offline_arrow span.prev { /* offline_arrow 없는거같음 */
+  transform: rotate(180deg);
+}
+
+/* ----------------------------- */
+/* Responsive
+/* ----------------------------- */
+/* Layout Max Size : 1320px (1280px)
+/* Desktop Size	: 1024px < Screen <= 1280px
+/* Tablet Size : 768px <= Screen <= 1024px
+/* Mobile Size : 441px < Screen < 660px (landscape)
+/* Mobile Size : 320px < Screen < 480px (portrait)
+/* ----------------------------- */
+
+@media screen and (max-width:1440px) {
+  /* offline_tab */
+
+  /* offline_list */
+  .offline_list {
+    width: 90%;
+    margin: 0 auto 55px;
+  }
+  .offline_bar span {
+    width: 39px;
+  }
+
+  /* offline_arrow 다 뺀거같음*/
+  .offline_arrow span {
+    top: 41%;
+    left: 0;
+    width: 18px;
+	background-size: 18px 47px;
+  }
+  .offline_arrow span.prev {
+  }
+  .offline_arrow span.next {
+    right: 0;
+  }
+	
+}
+
+@media screen and (max-width:1024px) {
+	/* offline_list */
+	.offline_wrap {
+		width:100%;
+		margin:0 auto;
+	}
+	.offline_list {
+	  width: 90%;
+	  margin: 0 auto 55px;
+	}
+	.offline_list li {
+	  float: left;
+	  width: 96%;
+	  height: 69px;
+	  line-height: 69px;
+	  margin: 5px 1%;
+	  padding: 0 30px;
+	  background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
+	  background-size: 29px 36px;
+	  max-width:100%;
+	}
+}
+
+@media screen and (max-width:960px) {
+	/* ----------------------------- */
+    /* offline
+    /* ----------------------------- */
+    /* offline_list */
+    .offline_list { /*있음*/
+      width: 80%;
+      margin: 0 auto 55px;
+    }
+    .offline_list li { /*있음*/
+      float: left;
+      width: 100%;
+      height: 69px;
+      line-height: 69px;
+      margin: 5px 0;
+      padding: 0 30px;
+      background: #fff url('../images/offline/location.svg') no-repeat center right 30px;
+      background-size: 29px 36px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {
+	h2.type01 {
+    font-size: 4.2rem;
+  }
+  .p_block {
+      display: none;
+  }
+  .t_block {
+      display: block;
+  }
+  .m_block {
+      display: none;
+  }
+
+  .id_height div {
+      position: absolute;
+      height: 69px;
+      top: -69px;
+  }
+  
+  /* ----------------------------- */
+  /* offline
+  /* ----------------------------- */
+  .offline { /*있음*/
+    padding-top: 84px;
+  }
+  .offline_con > p { /*있음*/
+      width: 80%;
+      margin: 0 auto 20px;
+  }
+  /* offline_tab */
+  .offline_tab { /*있음*/
+      width: 100%;
+      padding: 0 24px;
+      margin: 43px auto 25px;
+  }
+  .offline_tab li { /*있음*/
+    width: 50%;
+    height: 56px;
+    line-height: 52px;
+    font-size: 1.5rem;
+  }
+  /* offline_list */
+  .offline_list { /*있음*/
+    width: 100%;
+    padding: 0 24px;
+  }
+  .offline_list li { /*있음*/
+      width: 100%;
+    height: 64px;
+    line-height: 64px;
+    padding: 0 20px;
+    background: #fff url('../images/offline/location.svg') no-repeat center right 15px;
+    background-size: 22px 28px;
+  }
+  .offline_list li a { /*있음*/
+    padding-right: 20px;
+    font-size: 1.6rem;
+    font-family: "NotoSansBold";
+  }
+  .offline_bar span,
+  .offline_bar1 span { /*있음*/
+      width: 40px;
+  }
+  /* offline_arrow는 다 뺐음 */
+  .offline_arrow span { 
+    position: absolute;
+    width: 16px;
+    height: 32px;
+    background: url('/images/main/arrow_type02.png') no-repeat center;
+    background-size: 16px 32px;
+  }
+}
+
+/* Mobile : landscape */
+@media screen and (max-width:640px) {
+  /* ----------------------------- */
+  /* common
+  /* ----------------------------- */
+  .common_arrow span {
+    width: 16px;
+    height: 35px;
+    margin-top: -35px;
+    background: url('/images/main/arrow_line.svg') no-repeat center;
+    background-size: 16px 35px;
+  }
+  
+  /* ----------------------------- */
+  /* offline 다 있음 
+  /* ----------------------------- */
+  .offline_con {
+      padding-bottom: 82px;
+  }
+  .offline_con > img {
+      width: 90%;
+  }
+  .offline_list li {
+    float: left;
+    height: auto;
+    line-height: 160%;
+    padding: 10px 20px 7px;
+  }
+  .offline_list li a span {
+    display: block;
+    margin-left: 0;
+  }
+  
+}
+
+/* Mobile : portrait */
+@media screen and (max-width:480px) {
+  /* ----------------------------- */
+  /* offline 다있음
+  /* ----------------------------- */
+  .offline_con {
+      padding-bottom: 62px;
+  }
+  .offline_con > p {
+      width: 88%;
+      margin: 0 auto 20px;
+      font-size: 1.4rem;
+  }
+}
+
